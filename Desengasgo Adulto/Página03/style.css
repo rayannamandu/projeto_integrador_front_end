@@ -5,29 +5,49 @@
 
 .container{
     display: grid;
-    height: 1080px;
+    height: 2000px;
     width: 1440px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "nav nav nav nav2 nav2 nav2"
-                        "main main main main2 main2 main2"
-                        "conteudo1 conteudo1 conteudo1 conteudo1 conteudo1 conteudo1"
+                        "main main main main main main"
+                        "conteudo1 conteudo1 conteudo1 conteudo1_2 conteudo1_2 conteudo1_2"
                         "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2"
                         "conteudo3_1 conteudo3_1 conteudo3_1 conteudo3_2 conteudo3_2 conteudo3_2"
-                        "conteudo3_1 conteudo3_1 conteudo3_1 conteudo3_3 conteudo3_3 conteudo3_3"
-                        "conteudo3_4 conteudo3_4 conteudo3_4 conteudo3_4 conteudo3_4 conteudo3_4"
-                        "conteudo5_1 conteudo5_1 conteudo5_2 conteudo5_2 conteudo5_3 conteudo5_3";
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align:left;
-    font-weight: 400;
-
+                        "conteudo4 conteudo4 conteudo4 conteudo4 conteudo4 conteudo4"
+                        "conteudo5 conteudo5 conteudo5 conteudo5 conteudo5 conteudo5"
+                        "conteudo6_1 conteudo6_1 conteudo6_2 conteudo6_2 conteudo6_3 conteudo3_3"
+                        "conteudo7 conteudo7 conteudo7 conteudo7 conteudo7 conteudo7"
+                        "conteudo8  conteudo8 conteudo8 conteudo8 conteudo8 conteudo8"
+                        "conteudo9 conteudo9 conteudo9 conteudo9 conteudo9 conteudo9"
+                        "conteudo10_1 conteudo10_1 conteudo10_1 conteudo10_2 conteudo10_2 conteudo10_2 "
+                        "conteudo11_1 conteudo11_1 conteudo11_2 conteudo11_2 conteudo11_3 conteudo11_3 ";
 }
 
 #nav{
     background-color: #84C1D9;
     grid-area: nav;
 }
+
+.titulo {
+    padding-top: 5px; 
+    background-color:#84C1D9;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    line-height: .7;
+    margin-left: 70px;
+
+}
+
+.subtt {
+    padding-top: 25px;
+    background-color: #84C1D9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin-left: -30px;
+}
+
 #nav2{
     background-color: #DFF2F2;
     grid-area: nav2;
@@ -35,76 +55,164 @@
 
 img {
     margin-left: 70px;
-    margin-top: -30px;
-}
-
-p {
-    margin-left: 100px;
     margin-top: -20px;
 }
-#telefones{
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    margin-top: -18px;
+}
+.telefones{
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #main{
     background-color: #FFFFFF;
     grid-area: main;
 }
-#main2{
-    background-color: #FFFFFF;
-    grid-area: main2
+.titulo2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -40px;
+}
+.titulo3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #conteudo1{
-    background-color: #FFFFFF;
-    grid-area: conteudo1
-}
-#conteudo2{
     background-color: #DFF2F2;
-    grid-area: conteudo2
+    grid-area: conteudo1;
 }
+.parcial{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px black;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+.lista{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column: 4/6;
+    grid-row: 2/6;
+    text-align: center;
+}
+
+#conteudo1_2{
+    background-color: #DFF2F2;
+    grid-area: conteudo1_2;
+}
+
+.total{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    grid-column: 4/6;
+    grid-row: 3/3;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.lista2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column: 4/6;
+    grid-row: 3/6;
+    text-align: center;
+}
+
+#conteudo2{
+    background-color: #FFFFFF;
+    grid-area: conteudo2;
+    border-width: medium;
+    border-style: solid;
+    border-color: #D90404;
+    
+}
+.atencao{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.alerta1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bebida{
+    margin-left: 400px;
+    margin-top: -25px;
+}
+.alerta2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+}
+.aviso{
+    margin-left: 0px;
+    margin-top: -35px;
+}
+
 #conteudo3_1{
     background-color: #FFFFFF;
-    grid-area: conteudo3_1
+    grid-area: conteudo3_1;
 }
 #conteudo3_2{
     background-color: #FFFFFF;
-    grid-area: conteudo3_2
+    grid-area: conteudo3_2;
 }
 #conteudo3_3{
     background-color: #FFFFFF;
-    grid-area: conteudo3_3
+    grid-area: conteudo3_3;
 }
-#conteudo3_4{
+#conteudo4{
     background-color: #FFFFFF;
-    grid-area: conteudo3_4
+    grid-area: conteudo4;
 }
-#conteudo5_1{
+#conteudo5{
+    background-color: #F2F2F2;
+    grid-area: conteudo5;
+}
+#conteudo6_1{
+    background-color: #FFFFFF;
+    grid-area: conteudo6_1;
+}
+#conteudo6_2{
+    background-color: #FFFFFF;
+    grid-area: conteudo6_2;
+}
+#conteudo6_3{
+    background-color: #FFFFFF;
+    grid-area: conteudo6_3;
+}
+#conteudo7{
+    background-color: #F2F2F2;
+    grid-area: conteudo7;
+}
+#conteudo8{
+    background-color: #F2F2F2;
+    grid-area: conteudo8;
+}
+#conteudo9{
+    background-color: #FFFFFF;
+    grid-area: conteudo9;
+}
+#conteudo10_1{
+    background-color: #FFFFFF;
+    grid-area: conteudo10_1;
+}
+#conteudo10_2{
+    background-color: #FFFFFF;
+    grid-area: conteudo10_2;
+}
+#conteudo11_1{
     background-color: #84C1D9;
-    grid-area: conteudo5_1
+    grid-area: conteudo11_1;
 }
-#conteudo5_2{
+#conteudo11_2{
     background-color: #DFF2F2;
-    grid-area: conteudo5_2
+    grid-area: conteudo11_2;
 }
-#conteudo5_3{
+#conteudo11_3{
     background-color: #84C1D9;
-    grid-area: conteudo5_3
+    grid-area: conteudo11_3;
 }
-
-
-
-/*
-<div id="nav">A1</div>
-<div id="nav2">A2</div>
-<div id="main"> B1</div>
-<div id="main2"> B2</div>
-<div id="conteudo1"> C1</div>
-<div id="conteudo2"> D1</div>
-<div id="conteudo3_1">E1</div>
-<div id="conteudo3_2">E2.1</div>
-<div id="conteudo3_3">E2.2</div>
-<div id="conteudo3_4">F1</div>
-<div id="conteudo5_1">G1.1</div>
-<div id="conteudo5_2">G1.2</div>
-<div id="conteudo5_3">G1.3</div> */
