@@ -8,20 +8,21 @@
     height: 2000px;
     width: 1440px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "nav nav nav nav2 nav2 nav2"
                         "main main main main main main"
                         "conteudo1 conteudo1 conteudo1 conteudo1_2 conteudo1_2 conteudo1_2"
                         "conteudo2 conteudo2 conteudo2 conteudo2 conteudo2 conteudo2"
-                        "conteudo3_1 conteudo3_1 conteudo3_1 conteudo3_2 conteudo3_2 conteudo3_2"
-                        "conteudo4 conteudo4 conteudo4 conteudo4 conteudo4 conteudo4"
+                        "conteudo3 conteudo3 conteudo3 conteudo3 conteudo3 conteudo3"
+                        "conteudo4_1 conteudo4_1 conteudo4_1 conteudo4_2 conteudo4_2 conteudo4_2"
                         "conteudo5 conteudo5 conteudo5 conteudo5 conteudo5 conteudo5"
-                        "conteudo6_1 conteudo6_1 conteudo6_2 conteudo6_2 conteudo6_3 conteudo3_3"
-                        "conteudo7 conteudo7 conteudo7 conteudo7 conteudo7 conteudo7"
-                        "conteudo8  conteudo8 conteudo8 conteudo8 conteudo8 conteudo8"
-                        "conteudo9 conteudo9 conteudo9 conteudo9 conteudo9 conteudo9"
-                        "conteudo10_1 conteudo10_1 conteudo10_1 conteudo10_2 conteudo10_2 conteudo10_2 "
-                        "conteudo11_1 conteudo11_1 conteudo11_2 conteudo11_2 conteudo11_3 conteudo11_3 ";
+                        "conteudo6 conteudo6 conteudo6 conteudo6 conteudo6 conteudo6"
+                        "conteudo7_1 conteudo7_1 conteudo7_2 conteudo7_2 conteudo7_3 conteudo7_3"
+                        "conteudo8 conteudo8 conteudo8 conteudo8 conteudo8 conteudo8"
+                        "conteudo9  conteudo9 conteudo9 conteudo9 conteudo9 conteudo9"
+                        "conteudo10 conteudo10 conteudo10 conteudo10 conteudo10 conteudo10"
+                        "conteudo11_1 conteudo11_1 conteudo11_1 conteudo11_2 conteudo11_2 conteudo11_2 "
+                        "conteudo12_1 conteudo12_1 conteudo12_2 conteudo12_2 conteudo12_3 conteudo12_3 ";
 }
 
 #nav{
@@ -36,7 +37,6 @@
     font-size: 35px;
     line-height: .7;
     margin-left: 70px;
-
 }
 
 .subtt {
@@ -53,19 +53,53 @@
     grid-area: nav2;
 }
 
-img {
+.ambulancia{
     margin-left: 70px;
-    margin-top: -20px;
+    margin-top: -10px;
+}
+
+.bombeiros{
+    margin-left: 270px;
+    margin-top: -100px;
+}
+
+.policia{
+    margin-left: 470px;
+    margin-top: -90px;
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 100px;
-    margin-top: -18px;
+    margin-top: 5px;
 }
-.telefones{
-    margin-left: 15px;
-    margin-top: 20px;
+.samu{
+    margin-left: 8px;
+    margin-top: -10px;
+}
+.abt{
+    margin-left: 185px;
+    margin-top: -20px;
+}
+
+.viatura{
+    margin-left: 375px;
+    margin-top: -22px;
+}
+
+.telefone1{
+    margin-left: 18px;
+    margin-top: -8px;
+}
+
+.telefone2{
+    margin-left: 220px;
+    margin-top: -20px;
+}
+
+.telefone3{
+    margin-left: 395px;
+    margin-top: -25px;
 }
 
 #main{
@@ -93,7 +127,7 @@ p{
     text-align: center;
 }
 .lista{
-    font-size: 15px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     grid-column: 4/6;
     grid-row: 2/6;
@@ -116,7 +150,7 @@ p{
 }
 
 .lista2{
-    font-size: 15px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     grid-column: 4/6;
     grid-row: 3/6;
@@ -147,72 +181,142 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 30px;
 }
+
 .aviso{
     margin-left: 0px;
     margin-top: -35px;
 }
 
-#conteudo3_1{
+#conteudo3{
     background-color: #FFFFFF;
-    grid-area: conteudo3_1;
+    grid-area: conteudo3;
 }
-#conteudo3_2{
+
+.titulo4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#conteudo4_1{
     background-color: #FFFFFF;
-    grid-area: conteudo3_2;
+    grid-area: conteudo4_1;
 }
-#conteudo3_3{
+
+.video{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -45px;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.container form {
+    padding: 20px 10px 20px 10px;
     background-color: #FFFFFF;
-    grid-area: conteudo3_3;
+    border: 2px solid #84C1D9;
+    border-radius: 8%;
 }
-#conteudo4{
+
+#conteudo4_2{
     background-color: #FFFFFF;
-    grid-area: conteudo4;
+    grid-area: conteudo4_2;
 }
+
+.alvo1{
+    margin-left: -140px;
+}
+
+.etapa1{
+    margin-top: -35px;
+    margin-left: -90px;
+}
+
+.alvo2{
+    margin-left: -80px;
+    margin-top: 70px;
+}
+
+.etapa2{
+    margin-top: -50px;
+    margin-left: -30px;
+    text-align: center;
+}
+
+.alvo3{
+    margin-top: 40px;
+}
+
+.etapa3{
+    margin-top: -35px;
+    margin-left: 50px;
+}
+
 #conteudo5{
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     grid-area: conteudo5;
 }
-#conteudo6_1{
-    background-color: #FFFFFF;
-    grid-area: conteudo6_1;
+
+.manobra{
+    margin-top: -500px;
+    margin-left: 300px
 }
-#conteudo6_2{
-    background-color: #FFFFFF;
-    grid-area: conteudo6_2;
-}
-#conteudo6_3{
-    background-color: #FFFFFF;
-    grid-area: conteudo6_3;
-}
-#conteudo7{
+
+#conteudo6{
     background-color: #F2F2F2;
-    grid-area: conteudo7;
+    grid-area: conteudo6;
+}
+.titulo5{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.passos{
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#conteudo7_1{
+    background-color: #FFFFFF;
+    grid-area: conteudo7_1;
+}
+#conteudo7_2{
+    background-color: #FFFFFF;
+    grid-area: conteudo7_2;
+}
+#conteudo7_3{
+    background-color: #FFFFFF;
+    grid-area: conteudo7_3;
 }
 #conteudo8{
     background-color: #F2F2F2;
     grid-area: conteudo8;
 }
 #conteudo9{
-    background-color: #FFFFFF;
+    background-color: #F2F2F2;
     grid-area: conteudo9;
 }
-#conteudo10_1{
+#conteudo10{
     background-color: #FFFFFF;
-    grid-area: conteudo10_1;
-}
-#conteudo10_2{
-    background-color: #FFFFFF;
-    grid-area: conteudo10_2;
+    grid-area: conteudo10;
 }
 #conteudo11_1{
-    background-color: #84C1D9;
+    background-color: #FFFFFF;
     grid-area: conteudo11_1;
 }
 #conteudo11_2{
-    background-color: #DFF2F2;
+    background-color: #FFFFFF;
     grid-area: conteudo11_2;
 }
-#conteudo11_3{
+#conteudo12_1{
     background-color: #84C1D9;
-    grid-area: conteudo11_3;
+    grid-area: conteudo12_1;
+}
+#conteudo12_2{
+    background-color: #DFF2F2;
+    grid-area: conteudo12_2;
+}
+#conteudo12_3{
+    background-color: #84C1D9;
+    grid-area: conteudo12_3;
 }
